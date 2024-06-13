@@ -10,7 +10,7 @@ from helper import (
 from task import task
 from text_to_speech import text_to_speech
 
-st.set_page_config(page_title="Scrapegraph-ai demo", page_icon="🕷️")
+st.set_page_config(page_title="search", page_icon=🔍")
 
 # Install playwright browsers
 playwright_install()
@@ -20,7 +20,6 @@ def save_email(email):
         file.write(email + "\n")
 
 with st.sidebar:
-    st.write("Official demo for [Scrapegraph-ai](https://github.com/VinciGit00/Scrapegraph-ai) library")
     st.markdown("""---""")
     st.write("# Usage Examples")
     st.write("## Prompt 1")
@@ -32,12 +31,9 @@ with st.sidebar:
     st.write("## Prompt 4")
     st.write("- Read me the summary of the news")
     st.markdown("""---""")
-    st.write("You want to suggest tips or improvements? Contact me through email to mvincig11@gmail.com")
-    st.markdown("""---""")
-    st.write("Follow our [Github page](https://github.com/ScrapeGraphAI)")
 
 
-st.title("Scrapegraph-ai")
+st.title("Search")
 left_co, cent_co, last_co = st.columns(3)
 with cent_co:
     st.image("assets/scrapegraphai_logo.png")
