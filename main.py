@@ -19,18 +19,18 @@ def save_email(email):
     with open("mails.txt", "a") as file:
         file.write(email + "\n")
 
-with st.sidebar:
-    st.markdown("""---""")
-    st.write("# Usage Examples")
-    st.write("## Prompt 1")
-    st.write("- Give me all the news with their abstracts")
-    st.write("## Prompt 2")
-    st.write("- Create a voice summary of the webpage")
-    st.write("## Prompt 3")
-    st.write("- List me all the images with their visual description")
-    st.write("## Prompt 4")
-    st.write("- Read me the summary of the news")
-    st.markdown("""---""")
+# with st.sidebar:
+#     st.markdown("""---""")
+#     st.write("# Usage Examples")
+#     st.write("## Prompt 1")
+#     st.write("- Give me all the news with their abstracts")
+#     st.write("## Prompt 2")
+#     st.write("- Create a voice summary of the webpage")
+#     st.write("## Prompt 3")
+#     st.write("- List me all the images with their visual description")
+#     st.write("## Prompt 4")
+#     st.write("- Read me the summary of the news")
+#     st.markdown("""---""")
 
 
 st.title("Search")
