@@ -13,7 +13,6 @@ from text_to_speech import text_to_speech
 
 # Load environment variables
 load_dotenv()
-key = "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"
 key = os.getenv("OPENAI_KEY")
 
 st.set_page_config(page_title="search")
