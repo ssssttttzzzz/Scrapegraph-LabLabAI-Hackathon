@@ -10,7 +10,7 @@ from helper import (
 from task import task
 from text_to_speech import text_to_speech
 
-st.set_page_config(page_title="search", page_icon=🔍")
+st.set_page_config(page_title="search", page_icon=✐")
 
 # Install playwright browsers
 playwright_install()
