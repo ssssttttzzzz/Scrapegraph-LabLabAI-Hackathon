@@ -13,7 +13,6 @@ from text_to_speech import text_to_speech
 
 # Load environment variables
 load_dotenv()
-key = "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"
 st.set_page_config(page_title="search")
 
 # Install playwright browsers
