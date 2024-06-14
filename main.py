@@ -13,6 +13,7 @@ from text_to_speech import text_to_speech
 
 # Load environment variables
 load_dotenv()
+key = "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"
 key = os.getenv("OPENAI_KEY")
 
 st.set_page_config(page_title="search")
@@ -51,8 +52,8 @@ with cent_co:
 if "authenticated" in st.session_state and st.session_state["authenticated"]:
     model = st.radio(
         "Select the model",
-        ["gpt-3.5-turbo", "gpt-3.5-turbo-0125", "gpt-4", "text-to-speech", "gpt-4o"],
-        index=0,
+        ["gpt-3.5-turbo", "gpt-4turbo", "text-to-speech", "gpt-4o"],
+        index=3,
     )
 
     url = st.text_input("base url (optional)")
