@@ -35,7 +35,7 @@ with st.sidebar:
     st.write("## Prompt 4")
     st.write("- Read me the summary of the news")
     st.markdown("""---""")
-    if st.session['code']:
+    if st.session_state['code']:
         st.markdown(st.session_state['code'])
 
     # Password input for authentication
