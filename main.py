@@ -59,7 +59,7 @@ if "authenticated" in st.session_state and st.session_state["authenticated"]:
     prompt = st.text_input("Write the prompt")
 
     if st.button("Run the program", type="primary"):
-        if not model or not link_to_scrape or not prompt:
+        if not key or not model or not link_to_scrape or not prompt:
             st.error("Please fill in all fields except the base URL, which is optional.")
         else:
             st.write("Scraping phase started ...")
