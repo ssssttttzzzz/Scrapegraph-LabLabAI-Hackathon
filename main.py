@@ -22,7 +22,7 @@ def save_email(email):
     with open("mails.txt", "a") as file:
         file.write(email + "\n")
 if "code" not in st.session_state:
-    st.session_state = 0
+    st.session_state['code'] = 0
 with st.sidebar:
     st.markdown("""---""")
     st.write("# Usage Examples")
