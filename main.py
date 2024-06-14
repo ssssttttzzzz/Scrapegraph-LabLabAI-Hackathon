@@ -21,7 +21,7 @@ playwright_install()
 def save_email(email):
     with open("mails.txt", "a") as file:
         file.write(email + "\n")
-
+st.session_state["code"] = ''
 with st.sidebar:
     st.markdown("""---""")
     st.write("# Usage Examples")
