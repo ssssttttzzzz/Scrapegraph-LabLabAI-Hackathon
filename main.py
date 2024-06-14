@@ -14,7 +14,7 @@ from text_to_speech import text_to_speech
 # Load environment variables
 load_dotenv()
 key = os.getenv("OPENAI_KEY")
-print(key)
+st.write(key)
 st.set_page_config(page_title="search")
 
 # Install playwright browsers
