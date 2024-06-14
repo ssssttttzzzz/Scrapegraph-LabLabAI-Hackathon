@@ -21,7 +21,7 @@ playwright_install()
 def save_email(email):
     with open("mails.txt", "a") as file:
         file.write(email + "\n")
-st.session_state["code"] = ''
+        
 with st.sidebar:
     st.markdown("""---""")
     st.write("# Usage Examples")
@@ -34,7 +34,8 @@ with st.sidebar:
     st.write("## Prompt 4")
     st.write("- Read me the summary of the news")
     st.markdown("""---""")
-    st.markdown(st.session_state['code'])
+    if st.session_state['code']:
+        st.markdown(st.session_state['code'])
 
     # Password input for authentication
     password = st.text_input("Enter password to unlock:", type="password")
