@@ -21,7 +21,8 @@ playwright_install()
 def save_email(email):
     with open("mails.txt", "a") as file:
         file.write(email + "\n")
-        
+if "code" not in st.session_state:
+    st.session_state = 0
 with st.sidebar:
     st.markdown("""---""")
     st.write("# Usage Examples")
@@ -42,7 +43,7 @@ with st.sidebar:
     
     if password == "stz":
         st.session_state["authenticated"] = True
-        st.session["code"] = "k7Bv9xF4Z0mT2aQ3pJ1oL8wR6uY5N0gX9dW\
+        st.session_state["code"] = "k7Bv9xF4Z0mT2aQ3pJ1oL8wR6uY5N0gX9dW\
         3yH7nV2sA4bC6tP8zE1jK5fM3rQ\
         6oY9vL0wZ2uX4nT5mP1aR7yF9pH6dW3kJ8sV0gQ2oC4tN7zY1bA6jE5fM3rL9xW\
         4uT0pJ2aQ5mT8yR1oX6nV3sW9dH7bC4gK0zE2uY5fM8kP6tL1jQ3oR7vN9wF0J2\
