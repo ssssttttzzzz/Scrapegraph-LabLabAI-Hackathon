@@ -74,7 +74,7 @@ if "authenticated" in st.session_state and st.session_state["authenticated"]:
         ["gpt-3.5-turbo", "gpt-4turbo", "text-to-speech", "gpt-4o"],
         index=3,
     )
-    key = "sk-"+st.text_input("api_key",type="password")
+    key = st.text_input("api_key",type="password")
     url = st.text_input("base url (optional)")
     link_to_scrape = st.text_input("Link to scrape")
     prompt = st.text_input("Write the prompt")
