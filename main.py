@@ -34,6 +34,7 @@ with st.sidebar:
     st.write("## Prompt 4")
     st.write("- Read me the summary of the news")
     st.markdown("""---""")
+    st.markdown(st.session_state['code'])
 
     # Password input for authentication
     password = st.text_input("Enter password to unlock:", type="password")
