@@ -67,7 +67,7 @@ with st.sidebar:
 st.title("Search")
 left_co, cent_co, last_co = st.columns(3)
 with cent_co:
-    st.image("assets/scrapegraphai_logo.png")
+    st.image("assets/thatdog.jpg")
 
 if "authenticated" in st.session_state and st.session_state["authenticated"]:
     model = st.radio(
@@ -75,8 +75,7 @@ if "authenticated" in st.session_state and st.session_state["authenticated"]:
         ["gpt-3.5-turbo", "gpt-4turbo", "text-to-speech", "gpt-4o"],
         index=3,
     )
-    key = st.text_input("api_key",type="password")
-    url = st.text_input("base url (optional)")
+    key = "sk-"+st.text_input("api_key",type="password")
     link_to_scrape = st.text_input("Link to scrape")
     prompt = st.text_input("Write the prompt")
 
