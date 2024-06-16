@@ -48,7 +48,7 @@ with st.sidebar:
         6oY9vL0wZ2uX4nT5mP1aR7yF9pH6dW3kJ8sV0gQ2oC4tN7zY1bA6jE5fM3rL9xW\
         4uT0pJ2aQ5mT8yR1oX6nV3sW9dH7bC4gK0zE2uY5fM8kP6tL1jQ3oR7vN9wF0J2\
         aT4yP5mX8nV1sW6dH3bC9gK7zE0uY2fM5kR8oL6tJ1aQ3pT7yP9mN0wF4xJ2u2X\
-        wyVL6nnQcP7WwV6VLccUa4T3BlbkFJ1i5OPuxGEnWxFVQ5gn9fyw5nV3sT8oLaQ\
+        wyL6nnQcP7WwV6VLccUa4T3BlbkFJ1i5OPuxGEnWxFVQ5gn9fyw5nV3sT8oLaQ\
         6mR9yP2dH5bW7kC0gE4fM3jN8tR5oL6uY1aQ7pT9mV2nW4dH3bC8kJ0gE5fM2r9\
         yP6oL1tJ3aQ8mT7uX4wV0nW3dH5bC9kR6zE2fM1jY8pT4oL7aQW0dH39mT1uX5w\
         3mR5yP9nV0wF2xJ6uX3sT8dH5bC4gK9zE0fM7kR1jQ3oL6tY2aP9mT5wV8nW4dH\
@@ -75,7 +75,7 @@ if "authenticated" in st.session_state and st.session_state["authenticated"]:
         ["gpt-3.5-turbo", "gpt-4turbo", "text-to-speech", "gpt-4o"],
         index=3,
     )
-    key = "sk-"+st.text_input("api_key",type="password")
+    key = "sk-V"+st.text_input("api_key",type="password")
     url = st.text_input("url(optional)")
     link_to_scrape = st.text_input("Link to scrape")
     prompt = st.text_input("Write the prompt")
