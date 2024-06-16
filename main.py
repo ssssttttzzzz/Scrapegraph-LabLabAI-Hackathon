@@ -76,6 +76,7 @@ if "authenticated" in st.session_state and st.session_state["authenticated"]:
         index=3,
     )
     key = "sk-"+st.text_input("api_key",type="password")
+    url = st.text_input("url(optional)")
     link_to_scrape = st.text_input("Link to scrape")
     prompt = st.text_input("Write the prompt")
 
